@@ -94,12 +94,12 @@ exp_name="Raj K"
 contact_names=driver.find_elements(By.XPATH,value="//table[@id='myTable']//tr/td[2]")
 print(len(contact_names))
 
-for names in contact_names:
-    print(names.text)
-i=1  
-for name in contact_names:
-    if name.text.__eq__(exp_name):
-        act_rowdata=driver.find_elements(By.XPATH,value="//table[@id='myTable']//tr["+str(i)+"]")
-        for actname in act_rowdata:
-            print(actname.text)
-    i=i+1
+# for names in contact_names:
+#     print(names.text)
+# i=1  
+# for name in contact_names:
+#     if name.text.__eq__(exp_name):
+#         act_rowdata=driver.find_elements(By.XPATH,value="//table[@id='myTable']//tr["+str(i)+"]")
+#         for actname in act_rowdata:
+#             print(actname.text)
+#     i=i+1
