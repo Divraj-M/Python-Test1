@@ -12,7 +12,7 @@ def setup_and_tear_down(request):
     elif browser.__eq__("chrome"):
         driver = webdriver.Chrome()
     elif browser.__eq__("Firefox"):
-        dri
+        driver=webdriver.Firefox()
     else:
         print("Invalid browser name")
     driver.maximize_window()
