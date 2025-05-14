@@ -1,0 +1,6 @@
+2025-05-14 15:45:12,542 : INFO : test_search_valid_product : Entering product name into search box
+2025-05-14 15:45:12,819 : INFO : test_search_valid_product : Clicking search button
+2025-05-14 15:45:12,868 : INFO : test_search_valid_product : Validating product display status
+2025-05-14 15:45:47,872 : INFO : test_search_valid_product : Entering product name into search box
+2025-05-14 15:45:48,132 : INFO : test_search_valid_product : Clicking search button
+2025-05-14 15:45:48,175 : INFO : test_search_valid_product : Validating product display status
