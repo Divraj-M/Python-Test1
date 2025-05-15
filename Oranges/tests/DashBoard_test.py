@@ -10,7 +10,7 @@ class TestDashBoard:
     @pytest.mark.parametrize("username,password,expected_result", get_test_data("C:\\Users\\Lenovo\\Desktop\\Orange-Python\\Oranges\\Utilities\\loginData.xlsx", "login"))
     def test_DashBoard(self, username, password, expected_result):
         if(expected_result == "valid"):
-            log=consolelog.get_consolelog()
+            log=consolelog.get_logger()
             login_page = LoginPage(self.driver) 
             log.info("login entered")
             

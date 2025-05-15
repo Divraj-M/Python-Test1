@@ -1,0 +1,6 @@
+2025-05-15 09:15:48,871 : INFO : test_DashBoard : login entered
+2025-05-15 09:15:48,979 : INFO : test_login : login entered
+2025-05-15 09:15:49,174 : INFO : test_DashBoard : login clicked
+2025-05-15 09:15:49,201 : INFO : test_login : login clicked
+2025-05-15 09:15:49,333 : INFO : test_login : login clicked
+2025-05-15 09:15:52,175 : INFO : test_DashBoard : Dashboard page opened
