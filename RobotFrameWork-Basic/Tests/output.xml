@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-15T16:59:09.622404" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Checkbox" source="C:\Users\Lenovo\Desktop\Python-Test1\RobotFrameWork-Basic\Tests\test_checkbox.robot">
+<test id="s1-t1" name="Validate Elements on Login" line="5">
+<kw name="Open the Browser with URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:59:09.932451" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-15T16:59:09.932257" elapsed="1.433024"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:59:11.365642" level="INFO">Opening url 'https://demo.automationtesting.in/Register.html'</msg>
+<arg>https://demo.automationtesting.in/Register.html</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-15T16:59:11.365493" elapsed="5.965365"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-15T16:59:17.331682" elapsed="0.087263"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-15T16:59:17.419480" elapsed="0.004388"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:59:09.931612" elapsed="7.492656"/>
+</kw>
+<kw name="Verify the page contains checkbox">
+<kw name="Page Should Contain Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:59:17.468314" level="INFO">Current page contains checkbox 'id:checkbox1'.</msg>
+<arg>id:checkbox1</arg>
+<doc>Verifies checkbox ``locator`` is found from the current page.</doc>
+<status status="PASS" start="2025-05-15T16:59:17.425702" elapsed="0.042936"/>
+</kw>
+<kw name="Page Should Contain Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:59:17.514087" level="INFO">Current page contains checkbox 'id:checkbox2'.</msg>
+<arg>id:checkbox2</arg>
+<doc>Verifies checkbox ``locator`` is found from the current page.</doc>
+<status status="PASS" start="2025-05-15T16:59:17.469036" elapsed="0.045150"/>
+</kw>
+<kw name="Page Should Not Contain Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:59:17.552496" level="INFO">Current page does not contain checkbox 'name:radiooptions'.</msg>
+<arg>name:radiooptions</arg>
+<doc>Verifies checkbox ``locator`` is not found from the current page.</doc>
+<status status="PASS" start="2025-05-15T16:59:17.514360" elapsed="0.038324"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:59:17.425007" elapsed="0.127938"/>
+</kw>
+<kw name="Select Checkbox Options Cricket and Hockey">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:59:17.554005" level="INFO">Selecting checkbox 'id:checkbox1'.</msg>
+<arg>id:checkbox1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T16:59:17.553834" elapsed="0.112739"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:59:17.667232" level="INFO">Selecting checkbox 'id:checkbox3'.</msg>
+<arg>id:checkbox3</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T16:59:17.666917" elapsed="0.086769"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:59:17.553540" elapsed="0.200383"/>
+</kw>
+<kw name="Unselet the checkbox option Hockey">
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:59:17.755278" level="INFO">Unselecting checkbox 'id:checkbox3'.</msg>
+<arg>id:checkbox3</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T16:59:17.754960" elapsed="0.066386"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:59:17.754585" elapsed="0.066921"/>
+</kw>
+<kw name="Verify that Cricket is selected">
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:59:17.822489" level="INFO">Verifying checkbox 'id:checkbox1' is selected.</msg>
+<arg>id:checkbox1</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2025-05-15T16:59:17.822345" elapsed="0.037388"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:59:17.822036" elapsed="0.037863"/>
+</kw>
+<kw name="Verify that Hockey is not selected">
+<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
+<msg time="2025-05-15T16:59:17.860997" level="INFO">Verifying checkbox 'id:checkbox3' is not selected.</msg>
+<arg>id:checkbox3</arg>
+<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
+<status status="PASS" start="2025-05-15T16:59:17.860771" elapsed="0.031066"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:59:17.860413" elapsed="0.031549"/>
+</kw>
+<status status="PASS" start="2025-05-15T16:59:09.930974" elapsed="7.961354"/>
+</test>
+<status status="PASS" start="2025-05-15T16:59:09.624096" elapsed="8.269275"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Checkbox" id="s1" pass="1" fail="0" skip="0">Test Checkbox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
