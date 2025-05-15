@@ -1,0 +1,13 @@
+1747308477541	geckodriver	INFO	Listening on 127.0.0.1:59906
+1747308480634	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "5990 ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofileyn6FtC"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1747308481047	Marionette	INFO	Marionette enabled
+1747308481160	Marionette	INFO	Listening on port 59919
+WebDriver BiDi listening on ws://127.0.0.1:59907
+Read port: 59919
+1747308481351	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: [Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIWinTaskbar.getTaskbarProgress]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource:///modules/DownloadsTaskbar.sys.mjs :: _attachIndicator :: line 127"  data: no]

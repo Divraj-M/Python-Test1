@@ -24,3 +24,9 @@
 2025-05-15 09:41:14,068 : INFO : test_login : login clicked
 2025-05-15 09:41:16,018 : INFO : test_DashBoard : login clicked
 2025-05-15 09:41:19,018 : INFO : test_DashBoard : Dashboard page opened
+2025-05-15 19:47:45,639 : INFO : test_login : login entered
+2025-05-15 19:47:46,153 : INFO : test_login : login clicked
+2025-05-15 19:47:56,323 : INFO : test_login : login entered
+2025-05-15 19:47:56,323 : INFO : test_login : login entered
+2025-05-15 19:47:57,030 : INFO : test_login : login clicked
+2025-05-15 19:47:57,030 : INFO : test_login : login clicked

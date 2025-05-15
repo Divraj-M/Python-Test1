@@ -6,7 +6,7 @@ from Utilities import consolelog
 
 @pytest.mark.usefixtures("setup_and_teardown")
 class TestLogin:
-    @pytest.mark.parametrize("username,password,expected_result", get_test_data("C:\\Users\\Lenovo\\Desktop\\Orange-Python\\Oranges\\Utilities\\loginData.xlsx", "login"))
+    @pytest.mark.parametrize("username,password,expected_result", get_test_data("C:\\Users\\Lenovo\\Desktop\\Python-Test1\\Oranges\\Utilities\\loginData.xlsx", "login"))
     def test_login(self, username, password, expected_result):
         log=consolelog.get_logger()
         login_page = LoginPage(self.driver)

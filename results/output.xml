@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-15T15:26:03.010191" rpa="false" schemaversion="5">
+<suite id="s1" name="Python-Test1" source="C:\Users\Lenovo\Desktop\Python-Test1">
+<suite id="s1-s1" name="RobotFrameWork-Basic" source="C:\Users\Lenovo\Desktop\Python-Test1\RobotFrameWork-Basic">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\Lenovo\Desktop\Python-Test1\RobotFrameWork-Basic\Tests">
+<suite id="s1-s1-s1-s1" name="Test Variable" source="C:\Users\Lenovo\Desktop\Python-Test1\RobotFrameWork-Basic\Tests\test_variable.robot">
+<test id="s1-s1-s1-s1-t1" name="Validate Successful Login" line="18">
+<kw name="Open the Browser with URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-15T15:26:03.314276" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-15T15:26:03.313883" elapsed="1.458136"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-15T15:26:04.773048" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-15T15:26:04.772424" elapsed="2.490897"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-15T15:26:07.263679" elapsed="0.001335"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-15T15:26:07.265266" elapsed="0.026967"/>
+</kw>
+<status status="PASS" start="2025-05-15T15:26:03.312673" elapsed="3.979868"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-15T15:26:07.294856" level="INFO">Typing text 'Admin' into text field 'css:input[name="username"]'.</msg>
+<arg>css:input[name="username"]</arg>
+<arg>${valid_username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T15:26:07.294136" elapsed="0.635558"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-15T15:26:07.931057" level="INFO">Typing text 'Admin123' into text field 'css:input[name="password"]'.</msg>
+<arg>css:input[name="password"]</arg>
+<arg>${valid_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T15:26:07.930174" elapsed="0.134490"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-15T15:26:08.066243" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
+<arg>css:.orangehrm-login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-15T15:26:08.065174" elapsed="0.094577"/>
+</kw>
+<status status="PASS" start="2025-05-15T15:26:07.293150" elapsed="0.866861"/>
+</kw>
+<kw name="Verify Dashboard Page opens">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-15T15:26:08.161795" level="INFO">Verifying element 'css:.oxd-topbar-header-breadcrumb-module' contains exact text 'Dashboard'.</msg>
+<msg time="2025-05-15T15:26:14.833594" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-05-15T15:26:14.834147" level="FAIL">Element with locator 'css:.oxd-topbar-header-breadcrumb-module' not found.</msg>
+<arg>css:.oxd-topbar-header-breadcrumb-module</arg>
+<arg>Dashboard</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="FAIL" start="2025-05-15T15:26:08.161110" elapsed="6.676862">Element with locator 'css:.oxd-topbar-header-breadcrumb-module' not found.</status>
+</kw>
+<status status="FAIL" start="2025-05-15T15:26:08.160462" elapsed="6.677806">Element with locator 'css:.oxd-topbar-header-breadcrumb-module' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-15T15:26:14.839186" elapsed="2.208248"/>
+</kw>
+<status status="FAIL" start="2025-05-15T15:26:03.311491" elapsed="13.736337">Element with locator 'css:.oxd-topbar-header-breadcrumb-module' not found.</status>
+</test>
+<doc>To validate the login form with valid credentials</doc>
+<status status="FAIL" start="2025-05-15T15:26:03.062048" elapsed="13.987477"/>
+</suite>
+<status status="FAIL" start="2025-05-15T15:26:03.059259" elapsed="13.992369"/>
+</suite>
+<status status="FAIL" start="2025-05-15T15:26:03.052257" elapsed="14.001196"/>
+</suite>
+<status status="FAIL" start="2025-05-15T15:26:03.021235" elapsed="14.034463"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Python-Test1" id="s1" pass="0" fail="1" skip="0">Python-Test1</stat>
+<stat name="RobotFrameWork-Basic" id="s1-s1" pass="0" fail="1" skip="0">Python-Test1.RobotFrameWork-Basic</stat>
+<stat name="Tests" id="s1-s1-s1" pass="0" fail="1" skip="0">Python-Test1.RobotFrameWork-Basic.Tests</stat>
+<stat name="Test Variable" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Python-Test1.RobotFrameWork-Basic.Tests.Test Variable</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

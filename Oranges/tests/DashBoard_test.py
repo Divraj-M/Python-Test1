@@ -5,7 +5,7 @@ from pages.DashBoardPage import DashboardPage
 from Utilities.ReadExcel import get_test_data
 from Utilities import consolelog
 
-test_data = get_test_data("C:\\Users\\Lenovo\\Desktop\\Orange-Python\\Oranges\\Utilities\\loginData.xlsx", "login")
+test_data = get_test_data("C:\\Users\\Lenovo\\Desktop\\Python-Test1\\Oranges\\Utilities\\loginData.xlsx", "login")
 @pytest.mark.usefixtures("setup_and_teardown")
 class TestDashBoard:
     def test_DashBoard(self):

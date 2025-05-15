@@ -2,7 +2,7 @@ from configparser import ConfigParser
 
 def get_config(category,key):
     config=ConfigParser()
-    config.read("C:\\Users\\Lenovo\\Desktop\\Orange-Python\\Oranges\\tests\\config.ini")    
+    config.read("C:\\Users\\Lenovo\\Desktop\\Python-Test1\\Oranges\\tests\\config.ini")    
     return config.get(category,key)
 
 

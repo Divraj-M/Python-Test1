@@ -1,0 +1,11 @@
+==============================================================================
+Test Variable :: Test cases for OrangeHRM login functionality                 
+==============================================================================
+Validate Elements on Login                                            | PASS |
+------------------------------------------------------------------------------
+Validate Sucessfull Login                                             | PASS |
+------------------------------------------------------------------------------
+Test Variable :: Test cases for OrangeHRM login functionality         | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Lenovo\Desktop\Python-Test1\RobotFrameWork-Basic\Tests\pabot_results\0\output.xml
