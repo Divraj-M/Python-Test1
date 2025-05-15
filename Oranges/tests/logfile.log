@@ -4,3 +4,23 @@
 2025-05-15 09:15:49,201 : INFO : test_login : login clicked
 2025-05-15 09:15:49,333 : INFO : test_login : login clicked
 2025-05-15 09:15:52,175 : INFO : test_DashBoard : Dashboard page opened
+2025-05-15 09:21:07,511 : INFO : test_DashBoard : login entered
+2025-05-15 09:21:08,198 : INFO : test_DashBoard : login clicked
+2025-05-15 09:21:11,198 : INFO : test_DashBoard : Dashboard page opened
+2025-05-15 09:21:27,424 : INFO : test_login : login entered
+2025-05-15 09:21:28,187 : INFO : test_login : login clicked
+2025-05-15 09:21:38,189 : INFO : test_login : login entered
+2025-05-15 09:21:38,189 : INFO : test_login : login entered
+2025-05-15 09:21:38,900 : INFO : test_login : login clicked
+2025-05-15 09:21:38,900 : INFO : test_login : login clicked
+2025-05-15 09:30:29,869 : INFO : test_login : login entered
+2025-05-15 09:30:30,350 : INFO : test_login : login clicked
+2025-05-15 09:30:30,621 : INFO : test_login : login entered
+2025-05-15 09:30:31,181 : INFO : test_login : login clicked
+2025-05-15 09:41:13,458 : INFO : test_login : login entered
+2025-05-15 09:41:13,702 : INFO : test_login : login entered
+2025-05-15 09:41:13,776 : INFO : test_DashBoard : login entered
+2025-05-15 09:41:13,795 : INFO : test_login : login clicked
+2025-05-15 09:41:14,068 : INFO : test_login : login clicked
+2025-05-15 09:41:16,018 : INFO : test_DashBoard : login clicked
+2025-05-15 09:41:19,018 : INFO : test_DashBoard : Dashboard page opened

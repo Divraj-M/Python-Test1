@@ -1,0 +1,2 @@
+[32mINFO    [0m test_login:Login_test.py:13 login entered
+[32mINFO    [0m test_login:Login_test.py:17 login clicked

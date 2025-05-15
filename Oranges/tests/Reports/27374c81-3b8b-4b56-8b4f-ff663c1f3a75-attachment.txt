@@ -1,0 +1,3 @@
+[32mINFO    [0m test_DashBoard:DashBoard_test.py:15 login entered
+[32mINFO    [0m test_DashBoard:DashBoard_test.py:20 login clicked
+[32mINFO    [0m test_DashBoard:DashBoard_test.py:24 Dashboard page opened
