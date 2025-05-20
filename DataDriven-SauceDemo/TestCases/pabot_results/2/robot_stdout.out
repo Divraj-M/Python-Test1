@@ -1,0 +1,88 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.sauceLogin                                                          
+==============================================================================
+Login with suace demo using                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:18
+    T:  Login with suace demo using    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:22
+      Validate successful login    username=standard_user    password=secret_sauce    Assert=Products
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:24
+      Open the browser with URL    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:29
+      Create Webdriver    ${browser}
+      |  ${browser} = chrome (str)
+______________________________________________________________________________
+| FAIL |
+TypeError: 'module' object is not callable
+------------------------------------------------------------------------------
+Login with suace demo using                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:18
+    T:  Login with suace demo using    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:22
+      Validate successful login    username=locked_out_user    password=secret_sauce    Assert=Epic sadface: Sorry, this user has been locked out.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:24
+      Open the browser with URL    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:29
+      Create Webdriver    ${browser}
+      |  ${browser} = chrome (str)
+______________________________________________________________________________
+| FAIL |
+TypeError: 'module' object is not callable
+------------------------------------------------------------------------------
+Login with suace demo using                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:18
+    T:  Login with suace demo using    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:22
+      Validate successful login    username=problem_user    password=secret_sauce    Assert=Products
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:24
+      Open the browser with URL    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:29
+      Create Webdriver    ${browser}
+      |  ${browser} = chrome (str)
+______________________________________________________________________________
+| FAIL |
+TypeError: 'module' object is not callable
+------------------------------------------------------------------------------
+Login with suace demo using                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:18
+    T:  Login with suace demo using    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:22
+      Validate successful login    username=performance_glitch_user    password=secret_sauce    Assert=Products
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:24
+      Open the browser with URL    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot:29
+      Create Webdriver    ${browser}
+      |  ${browser} = chrome (str)
+______________________________________________________________________________
+| FAIL |
+TypeError: 'module' object is not callable
+------------------------------------------------------------------------------
+TestCases.sauceLogin                                                  | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+TestCases                                                             | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Output:  C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\pabot_results\2\output.xml

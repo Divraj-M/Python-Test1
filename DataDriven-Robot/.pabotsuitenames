@@ -1,0 +1,8 @@
+datasources:439351e24902ce80b8f06402cb62c2fe471989fa
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:171d66be24065d6f225341e96c91b3ba92f051a2
+--test DataDriven-Robot.Testtemplate.Invalid Username
+--test DataDriven-Robot.Testtemplate.Invalid password
+--test DataDriven-Robot.Testtemplate.Special characters
+--test DataDriven-Robot.Testtemplate.Invalid username and Password

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-18T20:58:13.609371" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Test Radiobtn" source="C:\Users\Lenovo\Desktop\Python-Test1\RobotFrameWork-Basic\Tests\test_radiobtn.robot">
+<test id="s1-s1-t1" name="Validate Radio Button" line="5">
+<kw name="Open the Browser with URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-18T20:58:13.923803" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<arg>https://demo.automationtesting.in/Register.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-18T20:58:13.923502" elapsed="5.104188"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-18T20:58:19.028127" elapsed="0.095910"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-18T20:58:19.124888" elapsed="0.003932"/>
+</kw>
+<status status="PASS" start="2025-05-18T20:58:13.922713" elapsed="5.206332"/>
+</kw>
+<kw name="Select impressive option from 3 radio buttons">
+<kw name="Page Should Contain Radio Button" owner="SeleniumLibrary">
+<msg time="2025-05-18T20:58:19.223926" level="INFO">Current page contains radio button 'name:radiooptions'.</msg>
+<arg>name:radiooptions</arg>
+<doc>Verifies radio button ``locator`` is found from current page.</doc>
+<status status="PASS" start="2025-05-18T20:58:19.130047" elapsed="0.094044"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-18T20:58:24.225002" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-18T20:58:19.224362" elapsed="5.000889"/>
+</kw>
+<kw name="Page Should Contain Checkbox" owner="SeleniumLibrary">
+<msg time="2025-05-18T20:58:24.284500" level="INFO">Current page contains checkbox 'id:checkbox1'.</msg>
+<arg>id:checkbox1</arg>
+<doc>Verifies checkbox ``locator`` is found from the current page.</doc>
+<status status="PASS" start="2025-05-18T20:58:24.225616" elapsed="0.059110"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-18T20:58:29.285831" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-18T20:58:24.285007" elapsed="5.001111"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-05-18T20:58:29.286931" level="INFO">Selecting 'Male' from radio button 'radiooptions'.</msg>
+<arg>radiooptions</arg>
+<arg>Male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-05-18T20:58:29.286436" elapsed="0.143091"/>
+</kw>
+<status status="PASS" start="2025-05-18T20:58:19.129373" elapsed="10.300301"/>
+</kw>
+<kw name="Verify that the radio button is selected">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-05-18T20:58:34.431160" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-05-18T20:58:29.430263" elapsed="5.001047"/>
+</kw>
+<kw name="Radio Button Should Be Set To" owner="SeleniumLibrary">
+<msg time="2025-05-18T20:58:34.432171" level="INFO">Verifying radio button 'radiooptions' has selection 'Male'.</msg>
+<arg>radiooptions</arg>
+<arg>Male</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<status status="PASS" start="2025-05-18T20:58:34.431612" elapsed="0.047551"/>
+</kw>
+<status status="PASS" start="2025-05-18T20:58:29.429845" elapsed="5.049511"/>
+</kw>
+<status status="PASS" start="2025-05-18T20:58:13.922123" elapsed="20.557430"/>
+</test>
+<status status="PASS" start="2025-05-18T20:58:13.642359" elapsed="20.837890"/>
+</suite>
+<status status="PASS" start="2025-05-18T20:58:13.629117" elapsed="20.852012"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="Test Radiobtn" id="s1-s1" pass="1" fail="0" skip="0">Suites.Test Radiobtn</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

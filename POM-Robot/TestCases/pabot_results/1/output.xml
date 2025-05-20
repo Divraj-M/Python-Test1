@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T14:10:12.253538" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\Lenovo\Desktop\Python-Test1\POM-Robot\TestCases">
+<suite id="s1-s1" name="ForgetPasswordTest" source="C:\Users\Lenovo\Desktop\Python-Test1\POM-Robot\TestCases\ForgetPasswordTest.robot">
+<test id="s1-s1-t1" name="Validate Cancel Button Functionality" line="18">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:10:12.772147" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-05-19T14:10:12.771657" elapsed="2.422954"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:10:15.195553" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-19T14:10:15.195000" elapsed="4.145702"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T14:10:19.341055" elapsed="0.049019"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T14:10:19.390620" elapsed="0.005795"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:10:12.770481" elapsed="6.626475"/>
+</kw>
+<kw name="Go to forgot your password page" owner="LoginResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:10:19.399687" level="INFO">Clicking element 'xpath://div[@class='orangehrm-login-forgot']/p'.</msg>
+<arg>${forgot_password_link}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:10:19.398664" elapsed="1.143287"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:10:19.397771" elapsed="1.144413"/>
+</kw>
+<kw name="Verify Forgot Your Password page Opens" owner="ForgetPasswordResources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:10:20.543892" level="INFO">Verifying element 'css:.orangehrm-forgot-password-title' contains exact text 'Reset Password'.</msg>
+<arg>${forgot_password_username}</arg>
+<arg>Reset Password</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T14:10:20.543316" elapsed="0.448606"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:10:20.542559" elapsed="0.449649"/>
+</kw>
+<kw name="Cancel the Reset Button" owner="ForgetPasswordResources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:10:20.993856" level="INFO">Clicking button 'css:.orangehrm-forgot-password-button--cancel'.</msg>
+<arg>${cancel_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:10:20.993318" elapsed="0.534206"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:10:20.992572" elapsed="0.535481"/>
+</kw>
+<kw name="Verify that Login Page is displayed" owner="ForgetPasswordResources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:10:21.531655" level="INFO">Verifying element 'xpath://*[@class='orangehrm-login-slot']/h5' contains exact text 'Login'.</msg>
+<arg>${login_page_title}</arg>
+<arg>Login</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T14:10:21.530268" elapsed="0.421765"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:10:21.528769" elapsed="0.423591"/>
+</kw>
+<kw name="Close browser session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-19T14:10:21.953625" elapsed="2.182700"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:10:21.952909" elapsed="2.183679"/>
+</kw>
+<tag>cancelbtn</tag>
+<status status="PASS" start="2025-05-19T14:10:12.769321" elapsed="11.367388"/>
+</test>
+<doc>Test cases for the forgot password page</doc>
+<status status="PASS" start="2025-05-19T14:10:12.302578" elapsed="11.835547"/>
+</suite>
+<status status="PASS" start="2025-05-19T14:10:12.286035" elapsed="11.859810"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">cancelbtn</stat>
+</tag>
+<suite>
+<stat name="TestCases" id="s1" pass="1" fail="0" skip="0">TestCases</stat>
+<stat name="ForgetPasswordTest" id="s1-s1" pass="1" fail="0" skip="0">TestCases.ForgetPasswordTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

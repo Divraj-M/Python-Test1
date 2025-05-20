@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T17:19:40.180624" rpa="false" schemaversion="5">
+<suite id="s1" name="sauceLogin" source="C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot">
+<test id="s1-t1" name="Login with sauce demo using" line="18">
+<kw name="Validate successful login">
+<kw name="Open the browser with URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:41.071509" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T17:19:41.071300" elapsed="2.532379"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T17:19:43.603913" elapsed="0.048717"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T17:19:43.652984" elapsed="0.002089"/>
+</kw>
+<status status="PASS" start="2025-05-19T17:19:41.070751" elapsed="2.584490"/>
+</kw>
+<kw name="Fill the login Form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:43.657006" level="INFO">Typing text 'standard_user' into text field 'css:input[name="user-name"]'.</msg>
+<arg>css:input[name="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:43.656040" elapsed="0.160272"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:43.816829" level="INFO">Typing password into text field 'css:input[name="password"]'.</msg>
+<msg time="2025-05-19T17:19:43.851245" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[name="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:43.816530" elapsed="0.099359"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:43.916309" level="INFO">Clicking button 'xpath://input[@id='login-button']'.</msg>
+<arg>${login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:43.916084" elapsed="0.829922"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-05-19T17:19:43.655501" elapsed="1.090665"/>
+</kw>
+<kw name="Verify the message is correct">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:44.747624" level="INFO">Verifying element 'xpath://div[@class='product_label']' contains exact text 'Products'.</msg>
+<arg>${success_message}</arg>
+<arg>${Assert}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T17:19:44.747287" elapsed="0.030935"/>
+</kw>
+<arg>'${Assert}'=='Products'</arg>
+<arg>Element Text Should Be</arg>
+<arg>${success_message}</arg>
+<arg>${Assert}</arg>
+<arg>ELSE</arg>
+<arg>Element Should Contain</arg>
+<arg>${error_message}</arg>
+<arg>${Assert}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-19T17:19:44.746791" elapsed="0.031531"/>
+</kw>
+<arg>${Assert}</arg>
+<status status="PASS" start="2025-05-19T17:19:44.746363" elapsed="0.032036"/>
+</kw>
+<arg>username=standard_user</arg>
+<arg>password=secret_sauce</arg>
+<arg>Assert=Products</arg>
+<status status="PASS" start="2025-05-19T17:19:41.070391" elapsed="3.708054"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T17:19:44.779140" elapsed="2.163413"/>
+</kw>
+<status status="PASS" start="2025-05-19T17:19:41.069156" elapsed="5.873976"/>
+</test>
+<test id="s1-t2" name="Login with sauce demo using" line="18">
+<kw name="Validate successful login">
+<kw name="Open the browser with URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:46.950122" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T17:19:46.949675" elapsed="2.555674"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T17:19:49.505528" elapsed="0.028768"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T17:19:49.534471" elapsed="0.001028"/>
+</kw>
+<status status="PASS" start="2025-05-19T17:19:46.949118" elapsed="2.586478"/>
+</kw>
+<kw name="Fill the login Form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:49.536189" level="INFO">Typing text 'locked_out_user' into text field 'css:input[name="user-name"]'.</msg>
+<arg>css:input[name="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:49.536012" elapsed="0.145042"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:49.681815" level="INFO">Typing password into text field 'css:input[name="password"]'.</msg>
+<msg time="2025-05-19T17:19:49.716924" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[name="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:49.681417" elapsed="0.092045"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:49.774024" level="INFO">Clicking button 'xpath://input[@id='login-button']'.</msg>
+<arg>${login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:49.773661" elapsed="0.074718"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-05-19T17:19:49.535733" elapsed="0.312795"/>
+</kw>
+<kw name="Verify the message is correct">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:49.877164" level="INFO">Element 'xpath://h3' contains text 'Epic sadface: Sorry, this user has been locked out.'.</msg>
+<arg>${error_message}</arg>
+<arg>${Assert}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T17:19:49.849439" elapsed="0.027839"/>
+</kw>
+<arg>'${Assert}'=='Products'</arg>
+<arg>Element Text Should Be</arg>
+<arg>${success_message}</arg>
+<arg>${Assert}</arg>
+<arg>ELSE</arg>
+<arg>Element Should Contain</arg>
+<arg>${error_message}</arg>
+<arg>${Assert}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-19T17:19:49.849182" elapsed="0.028174"/>
+</kw>
+<arg>${Assert}</arg>
+<status status="PASS" start="2025-05-19T17:19:49.848785" elapsed="0.028640"/>
+</kw>
+<arg>username=locked_out_user</arg>
+<arg>password=secret_sauce</arg>
+<arg>Assert=Epic sadface: Sorry, this user has been locked out.</arg>
+<status status="PASS" start="2025-05-19T17:19:46.948342" elapsed="2.929127"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T17:19:49.878165" elapsed="2.149408"/>
+</kw>
+<status status="PASS" start="2025-05-19T17:19:46.945176" elapsed="5.083011"/>
+</test>
+<test id="s1-t3" name="Login with sauce demo using" line="18">
+<kw name="Validate successful login">
+<kw name="Open the browser with URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:52.033151" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T17:19:52.032824" elapsed="2.517469"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T17:19:54.550508" elapsed="0.037077"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T17:19:54.587831" elapsed="0.001725"/>
+</kw>
+<status status="PASS" start="2025-05-19T17:19:52.032445" elapsed="2.557276"/>
+</kw>
+<kw name="Fill the login Form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:54.590859" level="INFO">Typing text 'problem_user' into text field 'css:input[name="user-name"]'.</msg>
+<arg>css:input[name="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:54.590515" elapsed="0.134213"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:54.725352" level="INFO">Typing password into text field 'css:input[name="password"]'.</msg>
+<msg time="2025-05-19T17:19:54.758329" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[name="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:54.725054" elapsed="0.092330"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:54.818098" level="INFO">Clicking button 'xpath://input[@id='login-button']'.</msg>
+<arg>${login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:54.817814" elapsed="0.182119"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-05-19T17:19:54.589960" elapsed="0.410131"/>
+</kw>
+<kw name="Verify the message is correct">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:55.001383" level="INFO">Verifying element 'xpath://div[@class='product_label']' contains exact text 'Products'.</msg>
+<arg>${success_message}</arg>
+<arg>${Assert}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T17:19:55.001087" elapsed="0.052327"/>
+</kw>
+<arg>'${Assert}'=='Products'</arg>
+<arg>Element Text Should Be</arg>
+<arg>${success_message}</arg>
+<arg>${Assert}</arg>
+<arg>ELSE</arg>
+<arg>Element Should Contain</arg>
+<arg>${error_message}</arg>
+<arg>${Assert}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-19T17:19:55.000743" elapsed="0.052810"/>
+</kw>
+<arg>${Assert}</arg>
+<status status="PASS" start="2025-05-19T17:19:55.000312" elapsed="0.053439"/>
+</kw>
+<arg>username=problem_user</arg>
+<arg>password=secret_sauce</arg>
+<arg>Assert=Products</arg>
+<status status="PASS" start="2025-05-19T17:19:52.031907" elapsed="3.021932"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T17:19:55.054250" elapsed="2.137683"/>
+</kw>
+<status status="PASS" start="2025-05-19T17:19:52.029635" elapsed="5.162867"/>
+</test>
+<test id="s1-t4" name="Login with sauce demo using" line="18">
+<kw name="Validate successful login">
+<kw name="Open the browser with URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:57.197235" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com/v1/index.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T17:19:57.196917" elapsed="2.522259"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T17:19:59.719433" elapsed="0.034752"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T17:19:59.754369" elapsed="0.001220"/>
+</kw>
+<status status="PASS" start="2025-05-19T17:19:57.196525" elapsed="2.559362"/>
+</kw>
+<kw name="Fill the login Form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:59.757215" level="INFO">Typing text 'performance_glitch_user' into text field 'css:input[name="user-name"]'.</msg>
+<arg>css:input[name="user-name"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:59.756762" elapsed="0.152995"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:59.910636" level="INFO">Typing password into text field 'css:input[name="password"]'.</msg>
+<msg time="2025-05-19T17:19:59.940476" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[name="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:59.910146" elapsed="0.086172"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:19:59.997018" level="INFO">Clicking button 'xpath://input[@id='login-button']'.</msg>
+<arg>${login_btn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T17:19:59.996629" elapsed="5.902793"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-05-19T17:19:59.756148" elapsed="6.143512"/>
+</kw>
+<kw name="Verify the message is correct">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T17:20:05.901737" level="INFO">Verifying element 'xpath://div[@class='product_label']' contains exact text 'Products'.</msg>
+<arg>${success_message}</arg>
+<arg>${Assert}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T17:20:05.901285" elapsed="0.034209"/>
+</kw>
+<arg>'${Assert}'=='Products'</arg>
+<arg>Element Text Should Be</arg>
+<arg>${success_message}</arg>
+<arg>${Assert}</arg>
+<arg>ELSE</arg>
+<arg>Element Should Contain</arg>
+<arg>${error_message}</arg>
+<arg>${Assert}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-05-19T17:20:05.900687" elapsed="0.035042"/>
+</kw>
+<arg>${Assert}</arg>
+<status status="PASS" start="2025-05-19T17:20:05.899976" elapsed="0.035959"/>
+</kw>
+<arg>username=performance_glitch_user</arg>
+<arg>password=secret_sauce</arg>
+<arg>Assert=Products</arg>
+<status status="PASS" start="2025-05-19T17:19:57.195984" elapsed="8.740086"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T17:20:05.936855" elapsed="2.202438"/>
+</kw>
+<status status="PASS" start="2025-05-19T17:19:57.193771" elapsed="10.946022"/>
+</test>
+<status status="PASS" start="2025-05-19T17:19:40.182581" elapsed="27.959711"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="sauceLogin" id="s1" pass="4" fail="0" skip="0">sauceLogin</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-19T17:19:46.945514" level="WARN">Multiple tests with name 'Login with sauce demo using' executed in suite 'sauceLogin'.</msg>
+<msg time="2025-05-19T17:19:52.029704" level="WARN">Multiple tests with name 'Login with sauce demo using' executed in suite 'sauceLogin'.</msg>
+<msg time="2025-05-19T17:19:57.193860" level="WARN">Multiple tests with name 'Login with sauce demo using' executed in suite 'sauceLogin'.</msg>
+</errors>
+</robot>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T10:15:24.006646" rpa="false" schemaversion="5">
+<suite id="s1" name="test Dropdown" source="C:\Users\Lenovo\Desktop\Python-Test1\RobotFrameWork-Basic\Tests\test_Dropdown.robot">
+<test id="s1-t1" name="Select options in Dropdown" line="10">
+<kw name="Open the browser with URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:15:24.322212" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<arg>https://demo.automationtesting.in/Register.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-05-19T10:15:24.322025" elapsed="4.657090"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T10:15:28.979643" elapsed="0.047758"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T10:15:29.027989" elapsed="0.002673"/>
+</kw>
+<status status="PASS" start="2025-05-19T10:15:24.321429" elapsed="4.709617"/>
+</kw>
+<kw name="Select the dropdown option APIs by value">
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:15:29.033906" level="INFO">Selecting options from selection list 'id=Skills' by value APIs.</msg>
+<arg>id=Skills</arg>
+<arg>APIs</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-05-19T10:15:29.033034" elapsed="0.117229"/>
+</kw>
+<status status="PASS" start="2025-05-19T10:15:29.032078" elapsed="0.118359"/>
+</kw>
+<kw name="Select the dropdown option Microsoft by index">
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:15:29.151466" level="INFO">Selecting options from selection list 'id=Skills' by index 43.</msg>
+<arg>id=Skills</arg>
+<arg>43</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-05-19T10:15:29.151223" elapsed="0.514521"/>
+</kw>
+<status status="PASS" start="2025-05-19T10:15:29.150874" elapsed="0.515030"/>
+</kw>
+<kw name="Select the dropdown option CSS by label">
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:15:29.666965" level="INFO">Selecting options from selection list 'id=Skills' by label CSS.</msg>
+<arg>id=Skills</arg>
+<arg>CSS</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-05-19T10:15:29.666745" elapsed="0.170511"/>
+</kw>
+<status status="PASS" start="2025-05-19T10:15:29.666410" elapsed="0.171448"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T10:15:29.838815" elapsed="2.196659"/>
+</kw>
+<status status="PASS" start="2025-05-19T10:15:24.320767" elapsed="7.715118"/>
+</test>
+<doc>Test Dropdown Selection</doc>
+<status status="PASS" start="2025-05-19T10:15:24.008265" elapsed="8.030123"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="test Dropdown" id="s1" pass="1" fail="0" skip="0">test Dropdown</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

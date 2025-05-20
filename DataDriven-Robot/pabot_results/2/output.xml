@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T14:41:56.078214" rpa="false" schemaversion="5">
+<suite id="s1" name="DataDriven-Robot" source="C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-Robot">
+<suite id="s1-s1" name="Testtemplate" source="C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-Robot\testtemplate.robot">
+<test id="s1-s1-t1" name="Special characters" line="12">
+<kw name="Validate unsucessful login">
+<kw name="Open the browser with URL">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:41:56.541427" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-05-19T14:41:56.540998" elapsed="1.823128"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:41:58.365115" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-05-19T14:41:58.364673" elapsed="4.169766"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-05-19T14:42:02.534754" elapsed="0.044092"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-05-19T14:42:02.579241" elapsed="0.002220"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:41:56.539189" elapsed="6.042571"/>
+</kw>
+<kw name="Fill the login Form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:42:02.584166" level="INFO">Typing text '@#$' into text field 'css:input[name=username]'.</msg>
+<arg>css:input[name=username]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:42:02.583244" elapsed="0.559832"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:42:03.144120" level="INFO">Typing password into text field 'css:input[name=password]'.</msg>
+<msg time="2025-05-19T14:42:03.193209" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>css:input[name=password]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:42:03.143418" elapsed="0.161277"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:42:03.305753" level="INFO">Clicking button 'class:orangehrm-login-button'.</msg>
+<arg>class:orangehrm-login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-05-19T14:42:03.305136" elapsed="0.138295"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-05-19T14:42:02.582180" elapsed="0.861530"/>
+</kw>
+<kw name="Verify the error message is correct">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T14:42:03.446014" level="INFO">Verifying element 'css:.oxd-alert-content--error' contains exact text 'Invalid credentials'.</msg>
+<arg>${login_error_message}</arg>
+<arg>Invalid credentials</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T14:42:03.445091" elapsed="1.249722"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:42:03.444167" elapsed="1.250911"/>
+</kw>
+<kw name="Close Browser Session">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-05-19T14:42:04.696393" elapsed="2.170958"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:42:04.695620" elapsed="2.172069"/>
+</kw>
+<arg>@#$</arg>
+<arg>%$^&amp;</arg>
+<status status="PASS" start="2025-05-19T14:41:56.538294" elapsed="10.329567"/>
+</kw>
+<status status="PASS" start="2025-05-19T14:41:56.537054" elapsed="10.331133"/>
+</test>
+<doc>Generic resources for the project</doc>
+<status status="PASS" start="2025-05-19T14:41:56.117468" elapsed="10.751956"/>
+</suite>
+<status status="PASS" start="2025-05-19T14:41:56.104556" elapsed="10.768139"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="DataDriven-Robot" id="s1" pass="1" fail="0" skip="0">DataDriven-Robot</stat>
+<stat name="Testtemplate" id="s1-s1" pass="1" fail="0" skip="0">DataDriven-Robot.Testtemplate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
