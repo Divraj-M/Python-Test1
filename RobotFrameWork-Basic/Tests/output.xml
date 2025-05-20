@@ -1,97 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-17T19:11:52.678462" rpa="false" schemaversion="5">
-<suite id="s1" name="Test Checkbox" source="C:\Users\Lenovo\Desktop\Python-Test1\RobotFrameWork-Basic\Tests\test_checkbox.robot">
-<test id="s1-t1" name="Validate Elements on Login" line="5">
-<kw name="Open the Browser with URL">
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T10:46:04.151790" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Dragdrop" source="C:\Users\Lenovo\Desktop\Python-Test1\RobotFrameWork-Basic\Tests\test_dragdrop.robot">
+<test id="s1-t1" name="Verify that the user can drag and drop elements" line="9">
+<kw name="Open Browser To Demo Page">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-17T19:11:53.002061" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<arg>browser=chrome</arg>
+<msg time="2025-05-19T10:46:04.434012" level="INFO">Opening browser 'firefox' to base url 'https://demoqa.com/droppable'.</msg>
+<arg>https://demoqa.com/droppable</arg>
+<arg>browser=${browser_name}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-17T19:11:53.001873" elapsed="1.402509"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-17T19:11:54.404845" level="INFO">Opening url 'https://demo.automationtesting.in/Register.html'</msg>
-<arg>https://demo.automationtesting.in/Register.html</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-17T19:11:54.404660" elapsed="3.601874"/>
+<status status="PASS" start="2025-05-19T10:46:04.433738" elapsed="13.191353"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-17T19:11:58.006731" elapsed="0.038955"/>
+<status status="PASS" start="2025-05-19T10:46:17.625706" elapsed="0.299365"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>5s</arg>
+<arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2025-05-17T19:11:58.045963" elapsed="0.002988"/>
+<status status="PASS" start="2025-05-19T10:46:17.925804" elapsed="0.007086"/>
 </kw>
-<status status="PASS" start="2025-05-17T19:11:53.001246" elapsed="5.047886"/>
+<status status="PASS" start="2025-05-19T10:46:04.433092" elapsed="13.500254"/>
 </kw>
-<kw name="Verify the page contains checkbox">
-<kw name="Page Should Contain Checkbox" owner="SeleniumLibrary">
-<msg time="2025-05-17T19:11:58.084986" level="INFO">Current page contains checkbox 'id:checkbox1'.</msg>
-<arg>id:checkbox1</arg>
-<doc>Verifies checkbox ``locator`` is found from the current page.</doc>
-<status status="PASS" start="2025-05-17T19:11:58.050023" elapsed="0.035188"/>
+<kw name="Verify Element Text Before Drag">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:46:17.937961" level="INFO">Verifying element 'id:droppable' contains exact text 'Drop here'.</msg>
+<arg>id:droppable</arg>
+<arg>Drop here</arg>
+<arg>timeout=5</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T10:46:17.936658" elapsed="0.048348"/>
 </kw>
-<kw name="Page Should Contain Checkbox" owner="SeleniumLibrary">
-<msg time="2025-05-17T19:11:58.118974" level="INFO">Current page contains checkbox 'id:checkbox2'.</msg>
-<arg>id:checkbox2</arg>
-<doc>Verifies checkbox ``locator`` is found from the current page.</doc>
-<status status="PASS" start="2025-05-17T19:11:58.085629" elapsed="0.033494"/>
+<status status="PASS" start="2025-05-19T10:46:17.935015" elapsed="0.050207"/>
 </kw>
-<kw name="Page Should Not Contain Checkbox" owner="SeleniumLibrary">
-<msg time="2025-05-17T19:11:58.184860" level="INFO">Current page does not contain checkbox 'name:radiooptions'.</msg>
-<arg>name:radiooptions</arg>
-<doc>Verifies checkbox ``locator`` is not found from the current page.</doc>
-<status status="PASS" start="2025-05-17T19:11:58.119376" elapsed="0.065584"/>
+<kw name="Perform Drag And Drop">
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id:draggable</arg>
+<arg>id:droppable</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2025-05-19T10:46:17.986495" elapsed="0.607809"/>
 </kw>
-<status status="PASS" start="2025-05-17T19:11:58.049629" elapsed="0.135439"/>
+<status status="PASS" start="2025-05-19T10:46:17.985992" elapsed="0.608560"/>
 </kw>
-<kw name="Select Checkbox Options Cricket and Hockey">
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-05-17T19:11:58.186109" level="INFO">Selecting checkbox 'id:checkbox1'.</msg>
-<arg>id:checkbox1</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-17T19:11:58.185907" elapsed="0.142329"/>
+<kw name="Verify Element Text After Drag">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-05-19T10:46:18.595957" level="INFO">Verifying element 'id:droppable' contains exact text 'Dropped!'.</msg>
+<arg>id:droppable</arg>
+<arg>Dropped!</arg>
+<arg>timeout=5</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-05-19T10:46:18.595658" elapsed="0.016253"/>
 </kw>
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2025-05-17T19:11:58.328701" level="INFO">Selecting checkbox 'id:checkbox3'.</msg>
-<arg>id:checkbox3</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-17T19:11:58.328448" elapsed="0.097026"/>
+<status status="PASS" start="2025-05-19T10:46:18.595212" elapsed="0.016884"/>
 </kw>
-<status status="PASS" start="2025-05-17T19:11:58.185544" elapsed="0.240105"/>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T10:46:18.613021" elapsed="3.302832"/>
 </kw>
-<kw name="Unselet the checkbox option Hockey">
-<kw name="Unselect Checkbox" owner="SeleniumLibrary">
-<msg time="2025-05-17T19:11:58.426499" level="INFO">Unselecting checkbox 'id:checkbox3'.</msg>
-<arg>id:checkbox3</arg>
-<doc>Removes the selection of checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-17T19:11:58.426326" elapsed="0.117180"/>
-</kw>
-<status status="PASS" start="2025-05-17T19:11:58.426031" elapsed="0.117593"/>
-</kw>
-<kw name="Verify that Cricket is selected">
-<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
-<msg time="2025-05-17T19:11:58.544458" level="INFO">Verifying checkbox 'id:checkbox1' is selected.</msg>
-<arg>id:checkbox1</arg>
-<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
-<status status="PASS" start="2025-05-17T19:11:58.544316" elapsed="0.051727"/>
-</kw>
-<status status="PASS" start="2025-05-17T19:11:58.544044" elapsed="0.052252"/>
-</kw>
-<kw name="Verify that Hockey is not selected">
-<kw name="Checkbox Should Not Be Selected" owner="SeleniumLibrary">
-<msg time="2025-05-17T19:11:58.597633" level="INFO">Verifying checkbox 'id:checkbox3' is not selected.</msg>
-<arg>id:checkbox3</arg>
-<doc>Verifies checkbox ``locator`` is not selected/checked.</doc>
-<status status="PASS" start="2025-05-17T19:11:58.597368" elapsed="0.048312"/>
-</kw>
-<status status="PASS" start="2025-05-17T19:11:58.596901" elapsed="0.048939"/>
-</kw>
-<status status="PASS" start="2025-05-17T19:11:53.000562" elapsed="5.645817"/>
+<status status="PASS" start="2025-05-19T10:46:04.432191" elapsed="17.484020"/>
 </test>
-<status status="PASS" start="2025-05-17T19:11:52.680170" elapsed="5.967832"/>
+<status status="PASS" start="2025-05-19T10:46:04.153270" elapsed="17.763902"/>
 </suite>
 <statistics>
 <total>
@@ -100,7 +67,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Test Checkbox" id="s1" pass="1" fail="0" skip="0">Test Checkbox</stat>
+<stat name="Test Dragdrop" id="s1" pass="1" fail="0" skip="0">Test Dragdrop</stat>
 </suite>
 </statistics>
 <errors>

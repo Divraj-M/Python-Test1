@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T16:48:10.130845" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases">
+<suite id="s1-s1" name="sauceLogin" source="C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-SauceDemo\TestCases\sauceLogin.robot">
+<test id="s1-s1-t1" name="Login with suace demo using" line="18">
+<kw name="Validate successful login">
+<kw name="Open the browser with URL">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-19T16:48:12.526619" level="INFO">Creating an instance of the chrome WebDriver.</msg>
+<msg time="2025-05-19T16:48:12.527094" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-19T16:48:12.527494" level="FAIL">TypeError: 'module' object is not callable</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2025-05-19T16:48:12.525352" elapsed="0.007055">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.533096" elapsed="0.000309"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.533695" elapsed="0.000243"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.534206" elapsed="0.000249"/>
+</kw>
+<status status="FAIL" start="2025-05-19T16:48:12.522951" elapsed="0.011810">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Fill the login Form">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2025-05-19T16:48:12.535149" elapsed="0.000308"/>
+</kw>
+<kw name="Verify the message is correct">
+<arg>${Assert}</arg>
+<status status="NOT RUN" start="2025-05-19T16:48:12.535772" elapsed="0.000275"/>
+</kw>
+<arg>username=standard_user</arg>
+<arg>password=secret_sauce</arg>
+<arg>Assert=Products</arg>
+<status status="FAIL" start="2025-05-19T16:48:12.519560" elapsed="0.016743">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T16:48:12.536845" elapsed="0.000645"/>
+</kw>
+<status status="FAIL" start="2025-05-19T16:48:12.511938" elapsed="0.025706">TypeError: 'module' object is not callable</status>
+</test>
+<test id="s1-s1-t2" name="Login with suace demo using" line="18">
+<kw name="Validate successful login">
+<kw name="Open the browser with URL">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-19T16:48:12.572155" level="INFO">Creating an instance of the chrome WebDriver.</msg>
+<msg time="2025-05-19T16:48:12.572301" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-19T16:48:12.572496" level="FAIL">TypeError: 'module' object is not callable</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2025-05-19T16:48:12.571492" elapsed="0.002745">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.575040" elapsed="0.000448"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.575881" elapsed="0.000287"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.576486" elapsed="0.000315"/>
+</kw>
+<status status="FAIL" start="2025-05-19T16:48:12.570479" elapsed="0.006864">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Fill the login Form">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2025-05-19T16:48:12.577821" elapsed="0.000516"/>
+</kw>
+<kw name="Verify the message is correct">
+<arg>${Assert}</arg>
+<status status="NOT RUN" start="2025-05-19T16:48:12.578821" elapsed="0.000434"/>
+</kw>
+<arg>username=locked_out_user</arg>
+<arg>password=secret_sauce</arg>
+<arg>Assert=Epic sadface: Sorry, this user has been locked out.</arg>
+<status status="FAIL" start="2025-05-19T16:48:12.567983" elapsed="0.011728">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T16:48:12.580462" elapsed="0.000712"/>
+</kw>
+<status status="FAIL" start="2025-05-19T16:48:12.564985" elapsed="0.016390">TypeError: 'module' object is not callable</status>
+</test>
+<test id="s1-s1-t3" name="Login with suace demo using" line="18">
+<kw name="Validate successful login">
+<kw name="Open the browser with URL">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-19T16:48:12.587673" level="INFO">Creating an instance of the chrome WebDriver.</msg>
+<msg time="2025-05-19T16:48:12.587802" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-19T16:48:12.587996" level="FAIL">TypeError: 'module' object is not callable</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2025-05-19T16:48:12.586904" elapsed="0.002838">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.590577" elapsed="0.000291"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.591182" elapsed="0.000279"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.591717" elapsed="0.000304"/>
+</kw>
+<status status="FAIL" start="2025-05-19T16:48:12.585894" elapsed="0.006419">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Fill the login Form">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2025-05-19T16:48:12.592717" elapsed="0.000398"/>
+</kw>
+<kw name="Verify the message is correct">
+<arg>${Assert}</arg>
+<status status="NOT RUN" start="2025-05-19T16:48:12.593427" elapsed="0.000385"/>
+</kw>
+<arg>username=problem_user</arg>
+<arg>password=secret_sauce</arg>
+<arg>Assert=Products</arg>
+<status status="FAIL" start="2025-05-19T16:48:12.584676" elapsed="0.009415">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T16:48:12.594708" elapsed="0.000837"/>
+</kw>
+<status status="FAIL" start="2025-05-19T16:48:12.582084" elapsed="0.013626">TypeError: 'module' object is not callable</status>
+</test>
+<test id="s1-s1-t4" name="Login with suace demo using" line="18">
+<kw name="Validate successful login">
+<kw name="Open the browser with URL">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-19T16:48:12.612291" level="INFO">Creating an instance of the chrome WebDriver.</msg>
+<msg time="2025-05-19T16:48:12.612436" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-19T16:48:12.612614" level="FAIL">TypeError: 'module' object is not callable</msg>
+<arg>${browser}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2025-05-19T16:48:12.611748" elapsed="0.003147">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.615609" elapsed="0.000451"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.616469" elapsed="0.000342"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2025-05-19T16:48:12.617097" elapsed="0.000295"/>
+</kw>
+<status status="FAIL" start="2025-05-19T16:48:12.610899" elapsed="0.006806">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Fill the login Form">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2025-05-19T16:48:12.618111" elapsed="0.000352"/>
+</kw>
+<kw name="Verify the message is correct">
+<arg>${Assert}</arg>
+<status status="NOT RUN" start="2025-05-19T16:48:12.618797" elapsed="0.000278"/>
+</kw>
+<arg>username=performance_glitch_user</arg>
+<arg>password=secret_sauce</arg>
+<arg>Assert=Products</arg>
+<status status="FAIL" start="2025-05-19T16:48:12.609829" elapsed="0.009554">TypeError: 'module' object is not callable</status>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-05-19T16:48:12.620009" elapsed="0.000651"/>
+</kw>
+<status status="FAIL" start="2025-05-19T16:48:12.596559" elapsed="0.024279">TypeError: 'module' object is not callable</status>
+</test>
+<status status="FAIL" start="2025-05-19T16:48:10.194584" elapsed="2.427223"/>
+</suite>
+<status status="FAIL" start="2025-05-19T16:48:10.171802" elapsed="2.451972"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TestCases" id="s1" pass="0" fail="4" skip="0">TestCases</stat>
+<stat name="sauceLogin" id="s1-s1" pass="0" fail="4" skip="0">TestCases.sauceLogin</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-05-19T16:48:12.565271" level="WARN">Multiple tests with name 'Login with suace demo using' executed in suite 'TestCases.sauceLogin'.</msg>
+<msg time="2025-05-19T16:48:12.582187" level="WARN">Multiple tests with name 'Login with suace demo using' executed in suite 'TestCases.sauceLogin'.</msg>
+<msg time="2025-05-19T16:48:12.596692" level="WARN">Multiple tests with name 'Login with suace demo using' executed in suite 'TestCases.sauceLogin'.</msg>
+</errors>
+</robot>

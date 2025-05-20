@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-19T15:16:17.828811" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-Robot\Tests">
+<suite id="s1-s1" name="Logintest" source="C:\Users\Lenovo\Desktop\Python-Test1\DataDriven-Robot\Tests\Logintest.robot">
+<status status="SKIP" start="2025-05-19T15:16:17.902548" elapsed="0.798920"/>
+</suite>
+<status status="SKIP" start="2025-05-19T15:16:17.876191" elapsed="0.826878"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="0" skip="0">Tests</stat>
+<stat name="Logintest" id="s1-s1" pass="0" fail="0" skip="0">Tests.Logintest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
